@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { Github } from "lucide-react";
+import { Github, ExternalLink } from "lucide-react";
 import project1 from "@/assets/project-1.jpg";
 import project2 from "@/assets/project-2.jpg";
 import project3 from "@/assets/project-3.jpg";
@@ -11,12 +11,14 @@ const projects = [
     description: "Developed a machine learning solution for predictive analytics using Python and TensorFlow. Features automated data processing and visualization dashboards.",
     image: project1,
     github: "https://github.com/Tech-Hubb/Mood-Map",
+    demo: "https://sentiment-lens-57.lovable.app/",
   },
   {
     title: "Algora Chatbot",
     description: "Created a comprehensive BI system integrating SQL databases with interactive reporting tools. Streamlined business decision-making processes.",
     image: project2,
     github: "https://github.com/JadenMcRowdie/Algora-Chatbot",
+    demo: "https://creator.voiceflow.com/share/68aea8e4d54e34927d61667f/development",
   },
   {
     title: "Bias Audit Report",
@@ -56,13 +58,21 @@ const Projects = () => {
                   {project.description}
                 </CardDescription>
               </CardHeader>
-              <CardFooter>
+              <CardFooter className="flex gap-4">
                 <Button variant="default" size="sm" asChild>
                   <a href={project.github} target="_blank" rel="noopener noreferrer">
                     <Github className="mr-2 h-4 w-4" />
                     GitHub
                   </a>
                 </Button>
+                {project.demo && (
+                  <Button variant="outline" size="sm" asChild>
+                    <a href={project.demo} target="_blank" rel="noopener noreferrer">
+                      <ExternalLink className="mr-2 h-4 w-4" />
+                      Live Demo
+                    </a>
+                  </Button>
+                )}
               </CardFooter>
             </Card>
           ))}

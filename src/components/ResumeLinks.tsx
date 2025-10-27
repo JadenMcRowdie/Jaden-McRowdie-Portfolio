@@ -16,7 +16,7 @@ const ResumeLinks = () => {
             <CardContent className="p-8">
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <Button size="lg" variant="default" asChild className="w-full sm:w-auto">
-                  <a href="#" download>
+                  <a href="/Jaden_Mc_Rowdie_CV.pdf" download="Jaden_Mc_Rowdie_CV.pdf">
                     <FileText className="mr-2 h-5 w-5" />
                     Download Resume
                   </a>

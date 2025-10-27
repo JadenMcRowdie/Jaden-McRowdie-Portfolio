@@ -1,31 +1,28 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { ExternalLink, Github } from "lucide-react";
+import { Github } from "lucide-react";
 import project1 from "@/assets/project-1.jpg";
 import project2 from "@/assets/project-2.jpg";
 import project3 from "@/assets/project-3.jpg";
 
 const projects = [
   {
-    title: "AI-Powered Data Analytics Platform",
+    title: "Mood Map",
     description: "Developed a machine learning solution for predictive analytics using Python and TensorFlow. Features automated data processing and visualization dashboards.",
     image: project1,
-    github: "https://github.com/JadenMcRowdie",
-    demo: "#",
+    github: "https://github.com/Tech-Hubb/Mood-Map",
   },
   {
-    title: "Business Intelligence Dashboard",
+    title: "Algora Chatbot",
     description: "Created a comprehensive BI system integrating SQL databases with interactive reporting tools. Streamlined business decision-making processes.",
     image: project2,
-    github: "https://github.com/JadenMcRowdie",
-    demo: "#",
+    github: "https://github.com/JadenMcRowdie/Algora-Chatbot",
   },
   {
-    title: "Enterprise Web Application",
+    title: "Bias Audit Report",
     description: "Built a responsive web application using modern JavaScript frameworks. Implemented user authentication and database management systems.",
     image: project3,
-    github: "https://github.com/JadenMcRowdie",
-    demo: "#",
+    github: "https://github.com/Tech-Hubb/Bias-audit-report",
   },
 ];
 
@@ -59,17 +56,11 @@ const Projects = () => {
                   {project.description}
                 </CardDescription>
               </CardHeader>
-              <CardFooter className="flex gap-4">
+              <CardFooter>
                 <Button variant="default" size="sm" asChild>
                   <a href={project.github} target="_blank" rel="noopener noreferrer">
                     <Github className="mr-2 h-4 w-4" />
                     GitHub
-                  </a>
-                </Button>
-                <Button variant="outline" size="sm" asChild>
-                  <a href={project.demo} target="_blank" rel="noopener noreferrer">
-                    <ExternalLink className="mr-2 h-4 w-4" />
-                    Demo
                   </a>
                 </Button>
               </CardFooter>

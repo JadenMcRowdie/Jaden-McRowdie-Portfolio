@@ -108,11 +108,11 @@ const Contact = () => {
                   <h3 className="text-xl font-semibold mb-6 text-foreground">Connect With Me</h3>
                   <div className="space-y-4">
                     <a
-                      href="mailto:jaden@example.com"
+                      href="mailto:jadenmcrowdie@gmail.com"
                       className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors"
                     >
                       <Mail className="h-5 w-5" />
-                      <span>jaden@example.com</span>
+                      <span>jadenmcrowdie@gmail.com</span>
                     </a>
                     
                     <a

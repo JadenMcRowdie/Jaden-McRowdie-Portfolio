@@ -70,7 +70,7 @@ const Projects = () => {
                   <Button variant="outline" size="sm" asChild>
                     <a href={project.demo} target="_blank" rel="noopener noreferrer">
                       <ExternalLink className="mr-2 h-4 w-4" />
-                      View Website
+                      View Demo
                     </a>
                   </Button>
                 )}

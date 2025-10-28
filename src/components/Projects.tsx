@@ -11,7 +11,14 @@ const projects = [
     description: "Developed a machine learning solution for predictive analytics using Python and TensorFlow. Features automated data processing and visualization dashboards.",
     image: project1,
     github: "https://github.com/Tech-Hubb/Mood-Map",
-    demo: "https://sentiment-lens-57.lovable.app/",
+    demo: "https://share.zight.com/WnunPYX1",
+  },
+  {
+    title: "ThriveSense Mental Wellness Assistant",
+    description: "Built an AI-powered mental wellness assistant that provides personalized support and guidance. Integrates machine learning for sentiment analysis and adaptive responses.",
+    image: project3,
+    github: "https://github.com/Tech-Hubb/Thrivesense-AI-Wellness-assistant",
+    demo: "https://share.zight.com/WnunLzPN",
   },
   {
     title: "Algora Chatbot",
@@ -19,12 +26,6 @@ const projects = [
     image: project2,
     github: "https://github.com/JadenMcRowdie/Algora-Chatbot",
     demo: "https://creator.voiceflow.com/share/68aea8e4d54e34927d61667f/development",
-  },
-  {
-    title: "Bias Audit Report",
-    description: "Built a responsive web application using modern JavaScript frameworks. Implemented user authentication and database management systems.",
-    image: project3,
-    github: "https://github.com/Tech-Hubb/Bias-audit-report",
   },
 ];
 
